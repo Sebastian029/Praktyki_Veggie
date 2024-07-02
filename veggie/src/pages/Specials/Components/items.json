@@ -1,0 +1,45 @@
+[
+    { 
+        "id": 1, 
+        "name": "Greens fava", 
+        "description": "Lorem ipsum dolor sit Pellentesque vel enim a", 
+        "img": "image1",
+        "price": "17$"
+    },
+    { 
+        "id": 2, 
+        "name": "Celery quandong", 
+        "description": "Lorem ipsum dolor sit Pellentesque vel enim a", 
+        "img": "image2",
+        "price": "30$"
+    },
+    { 
+        "id": 3, 
+        "name": "Pea horseradish", 
+        "description": "Lorem ipsum dolor sit Pellentesque vel enim a", 
+        "img": "image3",
+        "price": "25$" 
+    },
+    { 
+        "id": 4, 
+        "name": "Soko radicchio", 
+        "description": "Lorem ipsum dolor sit Pellentesque vel enim a", 
+        "img": "image4",
+        "price": "7$" 
+    },
+    { 
+        "id": 5, 
+        "name": "Tigernut", 
+        "description": "Lorem ipsum dolor sit Pellentesque vel enim a", 
+        "img": "image5",
+        "price": "3$" 
+    },
+    { 
+        "id": 6, 
+        "name": "Yarrow sweet", 
+        "description": "Lorem ipsum dolor sit Pellentesque vel enim a", 
+        "img": "image6",
+        "price": "5$"
+    }
+
+]

@@ -1,0 +1,83 @@
+.specialsContainer{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    background-color: white;
+}
+
+.header{
+    font-size: 1.5em;
+}
+
+.img{
+    width: 10em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+  
+.gridItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid sandybrown;
+
+}
+
+.image{
+    width: 10em;
+    border: 1px solid darkblue;
+
+}
+
+.info{
+    height: 90%;
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid darkblue;
+
+}
+
+.name{
+    font-size: 1em;
+
+}
+
+.line{
+    width: 60%;
+    height: 1px;
+    background-color: rgba(59, 59, 59, 0.6);
+    margin: 10px;
+
+}
+
+.description{
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.price{
+    font-size: 1em;
+
+}
+  
+@media (max-width: 800px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
