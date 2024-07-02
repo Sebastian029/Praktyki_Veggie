@@ -1,4 +1,5 @@
 import styles from "./index.module.css";
+import { Link } from "react-router-dom";
 import HomeBackground from "./../../assets/HomeBackground.jpg";
 import yellowBackground from "./../../assets/yellowBackground.jpg";
 import decoration from "./../../assets/decoration.png";
@@ -29,6 +30,9 @@ const data = [
 ];
 
 function index() {
+  const handleNav = (path) => {
+    window.location.href = path;
+  };
   return (
     <div
       className={styles.main}
@@ -36,11 +40,11 @@ function index() {
     >
       <nav>
         <ul className={styles.navigationBar}>
-          <li>Home</li>
-          <li>Specials</li>
-          <li>About</li>
-          <li>Menu</li>
-          <li>Contact</li>
+          <li onClick={() => handleNav("/home")}>Home</li>
+          <li onClick={() => handleNav("/specials")}>Specials</li>
+          <li onClick={() => handleNav("/about")}>About</li>
+          <li onClick={() => handleNav("/menu")}>Menu</li>
+          <li onClick={() => handleNav("/contact")}>Contact</li>
         </ul>
       </nav>
 
