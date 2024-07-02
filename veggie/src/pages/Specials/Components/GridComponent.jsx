@@ -37,13 +37,10 @@ function GridComponent() {
     <div>
       <div ref={gridRef} className={styles.grid}>
         {items.map((item, index) => {
-          const isEvenRow = Math.floor(index / rowCount) % 2 === 0;
+          const isEvenRow = Math.floor(index * rowCount / items.length) % 2 === 0;
           return (
-            <div
-              key={index}
-              className={`${styles.gridItem} ${isEvenRow ? styles.evenRow : styles.oddRow}`}
-            >
-              {isEvenRow ? (
+            <div key={index} className={styles.gridItem}>
+              {!isEvenRow ? (
                 <>
                   <div className={styles.info}>
                     <div className={styles.name}>{item.name}</div>
@@ -82,7 +79,7 @@ function GridComponent() {
           );
         })}
       </div>
-      <div>Number of Rows: {rowCount}</div>
+
     </div>
   );
 }
