@@ -1,0 +1,219 @@
+.main{
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.contact{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+
+}
+
+.header{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: rgb(60, 60, 60);
+}
+
+.header2{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: rgb(60, 60, 60);
+}
+
+.decorationImg{
+    width: 10em;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.contactInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.adress{
+
+}
+
+.text{
+    font-size: 1em;
+    font-weight: 400;
+    color: rgb(60, 60, 60);
+
+}
+
+.reservations{
+
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input{
+    width: 40%;
+    background-color: rgba(0,0,0,0);
+    border: 0px;
+    border-bottom: 1px solid rgb(60, 60, 60);
+    margin-bottom: 3em;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.message{
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    border: 0px;
+    border-bottom: 1px solid rgb(60,60,60);
+    margin-bottom: 3em;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.button{
+    align-self: center;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 0px;
+    color: rgb(102, 102, 102);
+    margin: 2em;
+}
+
+.socials{
+    margin-right: 10%;
+
+}
+
+.icon{
+    margin-left: 1em;
+
+}
+
+@media (max-width: 1180px) {
+    .contact{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10%;
+        border: 1px solid greenyellow;
+    }
+
+    .header{
+        font-size: 1.2em;
+        font-weight: 400;
+        color: rgb(60, 60, 60);
+    }
+    
+    .header2{
+        font-size: 1em;
+        font-weight: 400;
+        color: rgb(60, 60, 60);
+    }
+
+    .text{
+        font-size: 0.8em;
+        font-weight: 400;
+        color: rgb(60, 60, 60);
+    
+    }
+    
+    .input{
+        width: 40%;
+        background-color: rgba(0,0,0,0);
+        border: 0px;
+        border-bottom: 1px solid rgb(60, 60, 60);
+        margin-bottom: 2em;
+        font-size: 0.9em;
+        font-style: italic;
+    }
+    
+    .message{
+        width: 100%;
+        background-color: rgba(0,0,0,0);
+        border: 0px;
+        border-bottom: 1px solid rgb(60,60,60);
+        margin-bottom: 2em;
+        font-size: 0.9em;
+        font-style: italic;
+    }
+    
+    .button{
+        align-self: center;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid rgb(102, 102, 102);
+        border-radius: 0px;
+        color: rgb(102, 102, 102);
+        margin: 1em;
+    }
+    
+    .icon{
+        margin-left: 0.8em;
+    
+    }
+    
+}
+
+@media (max-width: 1040px) {
+    .contactInfo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid hotpink;
+    }
+}
+
+@media (max-width: 790px) {
+    .aboutContainer {
+        display: grid;
+        grid-template-areas: 
+            "text";
+        position: relative;        
+    }
+
+    .aboutText {
+        width: 20em; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em; 
+        grid-area: text;
+        z-index: 1; 
+        align-self: center;
+        justify-self: center;
+    }
+
+    .aboutImage {
+        width: 25em; 
+        opacity: 0.3;
+        grid-area: text;
+        align-self: center;
+        justify-self: center;
+    }
+}
