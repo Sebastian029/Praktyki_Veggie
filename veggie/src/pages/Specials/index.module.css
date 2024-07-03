@@ -8,8 +8,6 @@
     background-color: white;
     padding-top: 1%;
     padding-bottom: 2%;
-    border: 2px solid salmon;
-
 }
 
 .header{
@@ -25,8 +23,6 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid salmon;
-
 }
   
 .gridItem {

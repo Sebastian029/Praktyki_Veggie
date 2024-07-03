@@ -1,0 +1,106 @@
+.aboutContainer{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.aboutText{
+    width: 35em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutHeader{
+    font-size: 1.4em;
+    margin-bottom: 1%;
+
+}
+
+.decorationImg{
+    width: 10em;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.aboutDescription{
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.signature{
+    align-self: flex-end;
+    justify-self: flex-end;
+    width: 10em;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.aboutImage{
+    width: 35em;
+    
+
+}
+
+@media (max-width: 1180px) {
+    .aboutContainer {
+        display: grid;
+        grid-template-areas: 
+            "text";
+        position: relative;
+    }
+
+    .aboutText {
+        width: 35em; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em; 
+        grid-area: text;
+        z-index: 1; 
+    }
+
+    .aboutImage {
+        width: 35em; 
+        opacity: 0.4;
+        grid-area: text;
+    }
+}
+
+@media (max-width: 790px) {
+    .aboutContainer {
+        display: grid;
+        grid-template-areas: 
+            "text";
+        position: relative;        
+    }
+
+    .aboutText {
+        width: 20em; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em; 
+        grid-area: text;
+        z-index: 1; 
+        align-self: center;
+        justify-self: center;
+    }
+
+    .aboutImage {
+        width: 25em; 
+        opacity: 0.3;
+        grid-area: text;
+        align-self: center;
+        justify-self: center;
+    }
+}
