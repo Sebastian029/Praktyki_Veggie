@@ -312,21 +312,21 @@ function Index() {
     },
     {
       label: <div onClick={() => getMeals(data, "mains")}>Main dishes</div>,
-      key: "0",
+      key: "1",
     },
     {
       type: "divider",
     },
     {
       label: <div onClick={() => getMeals(data, "desserts")}>Desserts</div>,
-      key: "0",
+      key: "2",
     },
     {
       type: "divider",
     },
     {
       label: <div onClick={() => getMeals(data, "starters")}>Starters</div>,
-      key: "0",
+      key: "3",
     },
     {
       type: "divider",
@@ -344,7 +344,7 @@ function Index() {
           items,
         }}
         trigger={["click"]}
-        className={styles.dropdownMenu}
+        overlayStyle={styles.dropdownMenu}
       >
         <span onClick={(e) => e.preventDefault()}>
           <Space>

@@ -1,5 +1,6 @@
+import { MenuOutlined } from "@ant-design/icons";
+import { Dropdown, Space } from "antd";
 import styles from "./index.module.css";
-import { Link } from "react-router-dom";
 import HomeBackground from "./../../assets/HomeBackground.jpg";
 import yellowBackground from "./../../assets/yellowBackground.jpg";
 import decoration from "./../../assets/decoration.png";
@@ -33,6 +34,40 @@ function index() {
   const handleNav = (path) => {
     window.location.href = path;
   };
+  const items = [
+    {
+      label: <div onClick={() => handleNav("/home")}>Home</div>,
+      key: "0",
+    },
+    {
+      type: "divider",
+    },
+    {
+      label: <div onClick={() => handleNav("/specials")}>Specials</div>,
+      key: "1",
+    },
+    {
+      type: "divider",
+    },
+    {
+      label: <div onClick={() => handleNav("/about")}>About</div>,
+      key: "2",
+    },
+    {
+      type: "divider",
+    },
+    {
+      label: <div onClick={() => handleNav("/menu")}>Menu</div>,
+      key: "3",
+    },
+    {
+      type: "divider",
+    },
+    {
+      label: <div onClick={() => handleNav("/contact")}>Contact</div>,
+      key: "4",
+    },
+  ];
   return (
     <div
       className={styles.main}
@@ -46,6 +81,20 @@ function index() {
           <li onClick={() => handleNav("/menu")}>Menu</li>
           <li onClick={() => handleNav("/contact")}>Contact</li>
         </ul>
+        <Dropdown
+          menu={{
+            items,
+          }}
+          trigger={["click"]}
+          className={styles.dropdownMenu}
+        >
+          <span onClick={(e) => e.preventDefault()}>
+            <Space>
+              Menu
+              <MenuOutlined />
+            </Space>
+          </span>
+        </Dropdown>
       </nav>
 
       <aside>
