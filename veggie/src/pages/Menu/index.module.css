@@ -1,4 +1,4 @@
-.main {
+.mainContainer {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -7,25 +7,96 @@
 }
 
 header {
+  margin: 20px 0px;
   text-align: center;
+  font-size: 2em;
+  display: block;
 }
 
-section > ul {
-  list-style-type: none;
+section {
+  margin-top: 20px;
 }
-
-section > ul > li {
-  flex: 1;
+section > span {
   color: var(--main-dark);
-  font-weight: 400;
   float: left;
-  padding: 5px 15px;
+  padding: 5px 20px;
+  margin-right: 20px;
   border: 1px solid transparent;
   border-radius: 2px;
   font-size: 1.2em;
 }
 
-section > ul > li:hover {
+section > span:hover {
   border: 1px solid var(--main-dark);
   cursor: pointer;
+}
+
+main {
+  width: 60%;
+  margin-top: 50px;
+  display: grid;
+  gap: 10px 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5;
+}
+
+.mealInfoBar {
+  display: flex;
+  justify-content: space-between;
+}
+.mealInfoBar * {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+.dotsFilling {
+  flex: 1;
+  border-top: 2px dotted var(--main-dark);
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.mealIngredients {
+  font-family: "Arsenal SC", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1em;
+  color: #3d3d3d;
+}
+.dropdownMenu {
+  margin: 20px 0px;
+  text-align: center;
+  font-size: 1.5em;
+  display: none;
+}
+@media (min-width: 601px) and (max-width: 1280px) {
+  section > span {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0;
+  }
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .dotsFilling {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  section > span {
+    display: none;
+  }
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .dropdownMenu {
+    display: block;
+  }
+  header {
+    display: none;
+  }
 }
