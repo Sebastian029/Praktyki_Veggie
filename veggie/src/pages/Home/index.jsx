@@ -36,35 +36,35 @@ function index() {
   };
   const items = [
     {
-      label: <div onClick={() => handleNav("#home")}>Home</div>,
+      label: <a href="#home">Home</a>,
       key: "0",
     },
     {
       type: "divider",
     },
     {
-      label: <div onClick={() => handleNav("#specials")}>Specials</div>,
+      label: <a href="#menu">Menu</a>,
       key: "1",
     },
     {
       type: "divider",
     },
     {
-      label: <div onClick={() => handleNav("#about")}>About</div>,
+      label: <a href="#specials">Specials</a>,
       key: "2",
     },
     {
       type: "divider",
     },
     {
-      label: <div onClick={() => handleNav("#menu")}>Menu</div>,
+      label: <a href="#about">About Us</a>,
       key: "3",
     },
     {
       type: "divider",
     },
     {
-      label: <div onClick={() => handleNav("#contact")}>Contact</div>,
+      label: <a href="#contact">Contact</a>,
       key: "4",
     },
   ];
@@ -75,21 +75,11 @@ function index() {
     >
       <nav>
         <ul className={styles.navigationBar}>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#menu">Menu</a>
-          </li>
-          <li>
-            <a href="#specials">Specials</a>
-          </li>
-          <li>
-            <a href="#about">About Us</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#specials">Specials</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact</a>
         </ul>
         <Dropdown
           menu={{
