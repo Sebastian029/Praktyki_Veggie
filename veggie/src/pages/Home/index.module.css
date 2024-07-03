@@ -8,7 +8,7 @@
 }
 
 .navigationBar {
-  position: absolute;
+  position: fixed;
   right: 5em;
   top: 1em;
   list-style-type: none;

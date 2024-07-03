@@ -32,39 +32,39 @@ const data = [
 
 function index() {
   const handleNav = (path) => {
-    window.location.href = path;
+    window.href = path;
   };
   const items = [
     {
-      label: <div onClick={() => handleNav("/home")}>Home</div>,
+      label: <div onClick={() => handleNav("#home")}>Home</div>,
       key: "0",
     },
     {
       type: "divider",
     },
     {
-      label: <div onClick={() => handleNav("/specials")}>Specials</div>,
+      label: <div onClick={() => handleNav("#specials")}>Specials</div>,
       key: "1",
     },
     {
       type: "divider",
     },
     {
-      label: <div onClick={() => handleNav("/about")}>About</div>,
+      label: <div onClick={() => handleNav("#about")}>About</div>,
       key: "2",
     },
     {
       type: "divider",
     },
     {
-      label: <div onClick={() => handleNav("/menu")}>Menu</div>,
+      label: <div onClick={() => handleNav("#menu")}>Menu</div>,
       key: "3",
     },
     {
       type: "divider",
     },
     {
-      label: <div onClick={() => handleNav("/contact")}>Contact</div>,
+      label: <div onClick={() => handleNav("#contact")}>Contact</div>,
       key: "4",
     },
   ];
@@ -75,11 +75,21 @@ function index() {
     >
       <nav>
         <ul className={styles.navigationBar}>
-          <li onClick={() => handleNav("/home")}>Home</li>
-          <li onClick={() => handleNav("/specials")}>Specials</li>
-          <li onClick={() => handleNav("/about")}>About</li>
-          <li onClick={() => handleNav("/menu")}>Menu</li>
-          <li onClick={() => handleNav("/contact")}>Contact</li>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#menu">Menu</a>
+          </li>
+          <li>
+            <a href="#specials">Specials</a>
+          </li>
+          <li>
+            <a href="#about">About Us</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
         <Dropdown
           menu={{
