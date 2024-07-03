@@ -344,7 +344,7 @@ function Index() {
           items,
         }}
         trigger={["click"]}
-        overlayStyle={styles.dropdownMenu}
+        className={styles.dropdownMenu}
       >
         <span onClick={(e) => e.preventDefault()}>
           <Space>

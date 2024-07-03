@@ -31,9 +31,6 @@ const data = [
 ];
 
 function index() {
-  const handleNav = (path) => {
-    window.href = path;
-  };
   const items = [
     {
       label: <a href="#home">Home</a>,
@@ -74,13 +71,13 @@ function index() {
       style={{ backgroundImage: `url(${HomeBackground})` }}
     >
       <nav>
-        <ul className={styles.navigationBar}>
+        <div className={styles.navigationBar}>
           <a href="#home">Home</a>
           <a href="#menu">Menu</a>
           <a href="#specials">Specials</a>
           <a href="#about">About Us</a>
           <a href="#contact">Contact</a>
-        </ul>
+        </div>
         <Dropdown
           menu={{
             items,
